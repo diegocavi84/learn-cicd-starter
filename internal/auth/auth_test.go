@@ -44,7 +44,7 @@ func TestGetAPIKey_ValidHeader(t *testing.T) {
 	if err != nil {
 		t.Errorf("Expected no error, got: %v", err)
 	}
-	if key != "mi-clave-secreta-123" {
+	if key != "valor-incorrecto-a-proposito" {
 		t.Errorf("Expected 'mi-clave-secreta-123', got: %s", key)
 	}
 }
