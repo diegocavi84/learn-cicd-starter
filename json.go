@@ -32,6 +32,6 @@ func respondWithJSON(w http.ResponseWriter, code int, payload interface{}) {
 	w.WriteHeader(code)
 	// #nosec G705 - Content-Type is set to application/json, preventing XSS
 	if _, err := w.Write(dat); err != nil {
-		log.Print("Error writing response: %v", err)
+		log.Printf("Error writing response: %v", err)
 	}
 }
